@@ -1,8 +1,9 @@
 <h1>Отзывы</h1>
-<form>
-<textarea id = 'commenets' name = 'comments' rows = '10' cols = '50'>Ваши пожелания: </textarea>
+<form action = '{% url "reverse" %}'>
+	<textarea rows = '10' cols = '50' name = 'usertext'></textarea>
+	<br><br>
+	<input type = 'submit' value = 'Reverse!'/>
 </form>
-<br><br>
-<input type = 'submit' value = 'Subimt!'/>
 
 <p>Not bad!</p>
+
